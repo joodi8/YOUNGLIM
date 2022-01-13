@@ -1,11 +1,11 @@
-/* main_content box1 */
+/* main_content box1 product_category */
 
 #content_container {
     width: 100%;
 }
 
 #content_box1 {
-    height: 856px;
+    height: 818px;
     background: #EFEFED;
 }
 
@@ -33,27 +33,22 @@
     padding: 18px 0;
     /* margin: 0 auto; */
     border-bottom: #fff solid 2px ;
-    background: rgb(156, 143, 143);
+    /* background: rgb(156, 143, 143); */
 }
 
 #img_box img {
     margin: 0 36px;
 }
 
+/* main_content box2 */
 
 
-
-
-
-
-
-/* 
 #content_box2 {
-    height: 1180px;
-    background: rgb(180, 176, 176);
+    height: 1160px;
+    background: #EDE9E4;
 }
 
-#content_box3 {
+/* #content_box3 {
     height: 1080px;
     background: #ddd;
 }
