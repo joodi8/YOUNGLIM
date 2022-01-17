@@ -43,34 +43,36 @@
 
 
 /* main_content box2 */
-
 #content_box2 {
     width: 100%;
     height: 1160px;
     background: #EDE9E4;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-/* 1.form 메뉴 */
-
 #form_container {
-    overflow: hidden;
-    width: 1760px;
-    height: 880px;
-    margin: 0 auto;
-    background: #999;
+    display: flex;
+    width: 1584px;
+    height: 864px;
+    justify-content: space-between;
+}
+
+
+/* form_menuBox */
+#form_box2 {
+    text-align: right;
 }
 
 #form_menuBox {
-    display: inline-block;
-    position: absolute;
-    left: 1690px;
-    height: 24px;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 110px;
 }
 
-.form_anchor {
-    display: inline-block;
+.form_anchor a {
+    color: #706B60;
 }
 
 .form_anchor:first-child {
@@ -85,62 +87,87 @@
     padding-left: 30px;
 }
 
-.form_anchor a {
-    color: #EFEFED;
-}
 
-/* 2. form 이미지 */
-#form_imgBox {
-    display: inline-block;
-    overflow: hidden;
-    width: 1760px;
-    height: 880px;
-}
-
-
-#form_imgBox > img:first-child {
-    position: absolute;
-}
-
-#form_imgBox > img:nth-child(2) {
-    position: absolute;
-    position: relative;
-    left: 976px;
-    top: 380px;
-}
-
-/* 3. form 텍스트 */
-
-#form_text {
-    display: inline-block;
-    position: absolute;
-    text-align: right;
-    left: 1552px;
-}
-
+/* >form_text */
 #form_text p:first-child {
     font-size: 40px;
     font-weight: 100;
 }
 
+#form_text {
+    padding: 110px 0 20px;
+}
 
 #form_text p {
     position: relative;
     font-size: 20px;
+    color: #706B60;
 }
 
 
-
-
-
-
-
-
+/* main_content box3 */
 
 #content_box3 {
     height: 1080px;
-    background: #ddd;
+    background: #59524A;
+    text-align: center;
 }
+
+#video_wrap {
+    position: relative;
+    width: 1280px; height: 720px;
+    margin: 0 auto;
+}
+
+#text_box {
+    
+}
+
+#video_box {
+    position: relative;
+    width: 1280px; height: 720px;
+}
+
+#video_cover {
+    position: relative;
+    position: absolute;
+}
+
+#video_cover button {
+    width: 86px; height: 66px;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.4);
+    left: 597px;
+    top: 327px;
+}
+
+#video_cover button > img {
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* #video_cover img:last-child {
+    position: absolute;
+    left: 610px;
+    top: 330px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #content_box4 {
     height: 742px;
