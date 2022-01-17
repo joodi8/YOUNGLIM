@@ -6,16 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <!-- 헤더 -->
     <header id="header_container">
         <div id="gnb_box">
             <a id="main_icon" href="#"><img src="./img/header_icon/younglim-logo-w.png" alt="로고" width="144" height="30"></a>
             <ul id="gnb_menu">
-                <li class="gnb_anchor"><a href="#">브랜드</a></li>
-                <li class="gnb_anchor"><a href="#">제품</a></li>
-                <li class="gnb_anchor"><a href="#">인테리어 솔루션</a></li>
+                <li class="gnb_anchor"><a href="#">브랜드
+                    <ul class="lnb_menu">
+                        <li class="lnb_anchor"><a href="#">Made in Younglim</a></li>
+                        <li class="lnb_anchor"><a href="#">Life with Younglim</a></li>
+                        <li class="lnb_anchor"><a href="#">Identity of Younglim</a></li>
+                    </ul>
+                </a></li>
+                <li class="gnb_anchor"><a href="#">제품
+                    <ul class="lnb_menu">
+                        <li class="lnb_anchor"><a href="#">키친/붙박이장</a></li>
+                        <li class="lnb_anchor"><a href="#">바스/타일</a></li>
+                        <li class="lnb_anchor"><a href="#">도어</a></li>
+                        <li class="lnb_anchor"><a href="#">중문</a></li>
+                        <li class="lnb_anchor"><a href="#">창호</a></li>
+                        <li class="lnb_anchor"><a href="#">몰딩/월/마루</a></li>
+                        <li class="lnb_anchor"><a href="#">인테리어 필름</a></li>
+                    </ul>
+                </a></li>
+                <li class="gnb_anchor"><a href="#">인테리어 솔루션
+                    <ul class="lnb_menu">
+                        <li class="lnb_anchor"><a href="#">인테리어 시작하기</a></li>
+                        <li class="lnb_anchor"><a href="#">인테리어 스타일 제안</a></li>
+                        <li class="lnb_anchor"><a href="#">리모델링 사례</a></li>
+                    </ul>
+                </a></li>
                 <li class="gnb_anchor"><a href="#">매거진.Y</a></li>
                 <li class="gnb_anchor"><a href="#">쇼룸 안내</a></li>
             </ul>
@@ -25,76 +49,20 @@
                 <a class="side_icon" href="#"><img src="./img/header_icon/icon-gnb-search.png" alt="검색" width="30" height="30"></a>
             </div>
         </div>
-        <div id="lnb_box">
-            <ul class="lnb_menu">
-                <li class="lnb_anchor"><a href="#">Made in Younglim</a></li>
-                <li class="lnb_anchor"><a href="#">Life with Younglim</a></li>
-                <li class="lnb_anchor"><a href="#">Identity of Younglim</a></li>
-            </ul>
-            <ul class="lnb_menu">
-                <li class="lnb_anchor"><a href="#">키친/붙박이장</a></li>
-                <li class="lnb_anchor"><a href="#">바스/타일</a></li>
-                <li class="lnb_anchor"><a href="#">도어</a></li>
-                <li class="lnb_anchor"><a href="#">중문</a></li>
-                <li class="lnb_anchor"><a href="#">창호</a></li>
-                <li class="lnb_anchor"><a href="#">몰딩/월/마루</a></li>
-                <li class="lnb_anchor"><a href="#">인테리어 필름</a></li>
-            </ul>
-            <ul class="lnb_menu">
-                <li class="lnb_anchor"><a href="#">인테리어 시작하기</a></li>
-                <li class="lnb_anchor"><a href="#">인테리어 스타일 제안</a></li>
-                <li class="lnb_anchor"><a href="#">리모델링 사례</a></li>
-            </ul>
-        </div>
-
-        <!-- 헤더 메인 슬라이더 -->
-        <div id="header_slide">
-            <div class="css-slider-wrapper">
-                <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
-                <input type="radio" name="slider" class="slide-radio2" id="slider_2">
-                <input type="radio" name="slider" class="slide-radio3" id="slider_3">
-                <!-- <input type="radio" name="slider" class="slide-radio4" id="slider_4"> -->
-                <div class="slider-pagination">
-                    <label for="slider_1" class="page1"></label>
-                    <label for="slider_2" class="page2"></label>
-                    <label for="slider_3" class="page3"></label>
-                    <!-- <label for="slider_4" class="page4"></label> -->
-                </div>
-
-
-                <div class="next control">
-                    <label for="slider_1" class="numb1"><i class="fas fa-chevron-right"></i></label>
-                    <label for="slider_2" class="numb2"><i class="fas fa-chevron-right"></i></label>
-                    <label for="slider_3" class="numb3"><i class="fas fa-chevron-right"></i></label>
-                </div>
-                <div class="previous control">
-                    <label for="slider_1" class="numb1"><i class="fas fa-chevron-left"></i></label>
-                    <label for="slider_2" class="numb2"><i class="fas fa-chevron-left"></i></label>
-                    <label for="slider_3" class="numb3"><i class="fas fa-chevron-left"></i></label>
-                </div>
-
-
-                <div class="slider slide1">
-                    <div>
-                        <h2>Css Based slider</h2>
-                        <a href="#" class="button">MORE</a>
-                    </div>
-                </div>
-                <div class="slider slide2">
-                    <div>
-                        <h2>CSS Slider without use of any javascript or jQuery</h2>
-                        <a href="#" class="button">MORE</a>
-                    </div>
-                </div>
-                <div class="slider slide3">
-                    <div>
-                        <h2>Full screen animation slider</h2>
-                        <a href="#" class="button">MORE</a>
-                    </div>
-                </div>
+        <!-- 메인 슬라이더 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">Slide 1</div>
+                <div class="swiper-slide slide2">Slide 2</div>
+                <div class="swiper-slide slide3">Slide 3</div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </header>
+
+    <!-- 컨텐츠 -->
     <section id="content_container">
         <div id="content_box1">
             <ul id="product_category">
@@ -123,20 +91,42 @@
                 </ul>
                 <div id="form_imgBox">
                     <img src="http://placehold.it/624x880">
-                    <!-- <img src="http://placehold.it/784x500"> -->
+                    <img src="http://placehold.it/784x500">
                 </div>
                 <div id="form_text"></div>
             </div>
         </div>
         <div id="content_box3">
-            <!-- <div id="text_box">
+            <div id="text_box">
                 <h1>Made in Younglim</h1><br />
                 <p>영림은 원자재 입고부터 생산, 조립, 납품, 서비스까지 한 번에 진행하는</p>
                 <p>원스톱 생상공정 시스템을 통해 품질을 철저히 관리하고 있습니다.</p>
-            </div> -->
+            </div>
         </div>
         <div id="content_box4"></div>
     </section>
-    <footer id="footer_container"></footer>
+    <footer id="footer_container">
+        <div></div>
+        <div></div>
+    </footer>
 </body>
+<script src="./js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 </html>
