@@ -120,8 +120,22 @@
 }
 
 #text_box {
-    
+    padding: 90px 0 30px;
 }
+#text_box p:first-child {
+    color: #E2E2E3;
+    font-size: 40px;
+    letter-spacing: -1px;
+    padding-bottom: 16px;
+}
+#text_box p:nth-child(2),
+#text_box p:nth-child(3) {
+    color: #E2E2E3;
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 200;
+}
+
 
 #video_box {
     position: relative;
@@ -134,13 +148,13 @@
 }
 
 #video_cover button {
-    width: 86px; height: 66px;
+    width: 85px; height: 65px;
     position: absolute;
     border: 1px solid #fff;
-    border-radius: 30%;
+    border-radius: 22px;
     background: rgba(255, 255, 255, 0.4);
-    left: 597px;
-    top: 327px;
+    left: 598px;
+    top: 328px;
 }
 
 #video_cover button > img {
