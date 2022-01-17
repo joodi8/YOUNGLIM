@@ -40,8 +40,9 @@
     margin: 0 36px;
 }
 
-/* main_content box2 */
 
+
+/* main_content box2 */
 
 #content_box2 {
     width: 100%;
@@ -49,10 +50,12 @@
     background: #EDE9E4;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
+
+/* 1.form 메뉴 */
+
 #form_container {
-    /* position: relative; */
+    overflow: hidden;
     width: 1760px;
     height: 880px;
     margin: 0 auto;
@@ -61,9 +64,8 @@
 
 #form_menuBox {
     display: inline-block;
-    position: relative;
-    left: 1302px;
-    /* bottom: 862px; */
+    position: absolute;
+    left: 1690px;
     height: 24px;
 }
 
@@ -87,26 +89,52 @@
     color: #EFEFED;
 }
 
+/* 2. form 이미지 */
 #form_imgBox {
-    position: relative;
     display: inline-block;
+    overflow: hidden;
     width: 1760px;
     height: 880px;
-    top: 0px; left: 0px;
 }
 
 
 #form_imgBox > img:first-child {
-    /* right: 462px; */
-    /* position: absolute; */
+    position: absolute;
 }
 
 #form_imgBox > img:nth-child(2) {
-    /* position: relative; */
-    /* position: absolute; */
-
-
+    position: absolute;
+    position: relative;
+    left: 976px;
+    top: 380px;
 }
+
+/* 3. form 텍스트 */
+
+#form_text {
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    left: 1552px;
+}
+
+#form_text p:first-child {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+#form_text p {
+    position: relative;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
 
 
 #content_box3 {
