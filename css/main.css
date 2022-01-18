@@ -122,16 +122,16 @@
 #text_box {
     padding: 90px 0 30px;
 }
-#text_box p:first-child {
+#text_box h1 {
     color: #E2E2E3;
     font-size: 40px;
+    font-weight: 300;
     letter-spacing: -1px;
     padding-bottom: 16px;
 }
 #text_box p:nth-child(2),
 #text_box p:nth-child(3) {
     color: #E2E2E3;
-    font-size: 20px;
     margin: 5px 0;
     font-weight: 200;
 }
@@ -184,6 +184,83 @@
 
 
 #content_box4 {
-    height: 742px;
     background: rgb(184, 178, 178);
 }
+
+#counseling {
+    width: 1584px; height: 694px;
+    background: #EFEFED;
+    margin: 0 auto;
+    padding: 102px 0;
+}
+
+#counseling_text h1 {
+    padding-bottom: 10px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+#counseling_text p {
+    font-weight: 200;
+}
+#counseling_text a {
+    font-size: 16px;
+    display: inline-block;
+    padding: 20px 0 94px;
+    color: black;
+}
+
+#counseling_box {
+    width: 1584px; height: 464px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#counseling_imgBox1,
+#counseling_imgBox2, 
+#counseling_imgBox3 {
+    width: 464px; height: 464px;
+    position: relative;
+}
+
+#counseling_imgBox1 h1,
+#counseling_imgBox2 h1,
+#counseling_imgBox3 h1 {
+    position: absolute;
+    top: 50%;
+    
+    /* margin: ; */
+}
+
+/* 
+#counseling_imgBox1,
+#counseling_imgBox2,
+#counseling_imgBox3 {
+    width: 464px; height: 464px;
+    position: relative;
+}
+
+#counseling_imgBox1 a,
+#counseling_imgBox2 a,
+#counseling_imgBox3 a {
+    display: flex;
+    align-items: center;
+}
+
+#counseling_imgBox1 h1 {
+    position: absolute;
+    font-size: 32px;
+    color: black;
+    border-bottom: black solid 1px;
+}
+#counseling_imgBox2 h1,
+#counseling_imgBox3 h1 {
+    position: absolute;
+    font-size: 32px;
+    color: white;
+    border-bottom: white solid 1px;
+    padding: 0 auto;
+    top: 50%; left: 50%;
+} */
+
+
