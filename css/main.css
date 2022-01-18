@@ -221,46 +221,24 @@
 #counseling_imgBox3 {
     width: 464px; height: 464px;
     position: relative;
-}
-
-#counseling_imgBox1 h1,
-#counseling_imgBox2 h1,
-#counseling_imgBox3 h1 {
-    position: absolute;
-    top: 50%;
-    
-    /* margin: ; */
-}
-
-/* 
-#counseling_imgBox1,
-#counseling_imgBox2,
-#counseling_imgBox3 {
-    width: 464px; height: 464px;
-    position: relative;
-}
-
-#counseling_imgBox1 a,
-#counseling_imgBox2 a,
-#counseling_imgBox3 a {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #counseling_imgBox1 h1 {
     position: absolute;
-    font-size: 32px;
+    padding: 200px 5px 0;
+    border-bottom: black 1px solid;
     color: black;
-    border-bottom: black solid 1px;
 }
+
 #counseling_imgBox2 h1,
 #counseling_imgBox3 h1 {
     position: absolute;
-    font-size: 32px;
+    padding: 200px 5px 0;
+    border-bottom: white 1px solid;
     color: white;
-    border-bottom: white solid 1px;
-    padding: 0 auto;
-    top: 50%; left: 50%;
-} */
-
-
+    /* top: 50%; */
+    /* margin: ; */
+}
