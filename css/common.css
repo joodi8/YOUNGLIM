@@ -105,3 +105,80 @@ ul { list-style: none; }
     background-size: cover;
     background-position: center;
 }
+
+
+/* footer */
+#footer_container {
+    width: 100%;
+    background: #EDE9E4;
+}
+#footer_box {
+    width: 944px; height: 218px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 푸터 왼쪽 */
+
+#footer_left {
+    width: 482px; height: 218px;
+    /* background: cornflowerblue; */
+}
+#footer_logo {
+}
+
+#footer_logo P {
+    font-size: 32px;
+    font-weight: bold;
+}
+#footer_menu {
+    display: flex;
+}
+
+#footer_menu a {
+    color: #000;
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+
+
+/* 푸터 오른쪽 */
+
+#footer_right {
+    width: 240px; height: 218px;
+    /* background: cornflowerblue; */
+    text-align: center;
+}
+
+
+#footer_num {
+    padding: 22px 0 26px;
+}
+#footer_num p:first-child {
+    font-size: 14px;
+}
+#footer_num p:last-child {
+    font-size: 16px;
+}
+#footer_num h1 {
+    font-size: 32px;
+}
+#footer_num a {
+    color: #000;
+}
+
+
+
+#footer_sns{
+    padding-bottom: 8px;
+}
+#footer_sns a {
+    padding: 0 5px;
+}
+#footer_right > p {
+    color: #707070;
+    font-size: 10px;
+}
