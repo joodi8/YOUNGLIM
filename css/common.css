@@ -127,6 +127,7 @@ ul { list-style: none; }
     /* background: cornflowerblue; */
 }
 #footer_logo {
+    padding-top: 22px;
 }
 
 #footer_logo P {
@@ -160,14 +161,12 @@ ul { list-style: none; }
 #footer_num p:first-child {
     font-size: 14px;
 }
-#footer_num p:last-child {
-    font-size: 16px;
-}
 #footer_num h1 {
     font-size: 32px;
 }
 #footer_num a {
     color: #000;
+    font-size: 16px;
 }
 
 
