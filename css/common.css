@@ -16,49 +16,58 @@ ul { list-style: none; }
 }
 
 #gnb_box {
-    /* display: flex; */
-}
-
-#gnb_box {
-    position: relative;
     z-index: 2;
     position: absolute;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%; height: 80px;
     background: rgba(58, 48, 42, 0.7);
+    justify-content: space-between;
 }
 
 #main_icon {
-    margin-left: 20%;
+    padding-left: 20%;
 }
 
 
+#gnb_menu {
+    display: flex;
+    width: 624px;
+    justify-content: space-between;
+}
+
 .gnb_anchor {
     display: inline-block;
-    width: 144px; height: 30px;
     text-align: center;
-    line-height: 30px;
 }
 .gnb_anchor > a {
     color: #E2E2E3;
     font-weight: bold;
-    width: 144px; height: 30px;
 }
 
 #icon_box {
-    margin-right: 20%;
+    padding-right: 20%;
 }
 
 .side_icon {
     margin: 0 9px;
 }
 
+
+/* lnb(하위메뉴) */
+#active_path {
+    display: none;
+}
+#lnb_box {
+    display: flex;
+    /* display: none; */
+}
+
 .lnb_menu {
     /* display: flex; */
     display: none;
 }
+
 
 
 /* swiper slide */
@@ -124,7 +133,7 @@ ul { list-style: none; }
 
 #footer_left {
     width: 482px; height: 218px;
-    /* background: cornflowerblue; */
+
 }
 #footer_logo {
     padding-top: 22px;
@@ -134,7 +143,11 @@ ul { list-style: none; }
     font-size: 32px;
     font-weight: bold;
 }
+
 #footer_menu {
+}
+
+#footer_menu ul {
     display: flex;
 }
 
@@ -181,3 +194,8 @@ ul { list-style: none; }
     color: #707070;
     font-size: 10px;
 }
+
+@media screen and (max-width: 767px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px){}
+@media screen and (min-width: 1024px) {}
+
