@@ -50,13 +50,15 @@ ul { list-style: none; }
     display: flex;
     justify-content: space-between;
 }
+#icon_box > a:last-child {
+    display: none;
+}
 
 .side_icon {
     /* margin: 0 9px; */
 }
 
-
-/* lnb(하위메뉴) */
+/* 엑티브바 */
 #active_path {
     width: 100%;
     height: 6px;
@@ -65,6 +67,8 @@ ul { list-style: none; }
     top: 74px;
     z-index: 2;
 }
+
+/* lnb(하위메뉴) */
 #lnb_box {
     width: 100%;
     background: rgba(239, 239, 237, 0.7);
@@ -74,6 +78,7 @@ ul { list-style: none; }
     z-index: 2;
     justify-content: center;
     height: 274px;
+    display: none;
 }
 #lnb_innerBox {
     display: flex;
@@ -90,16 +95,10 @@ ul { list-style: none; }
     color: #381E10;
 }
 
-.lnb_menu > .lnb_anchor:first-child a {
-}
-
 .lnb_anchor a:hover {
     font-size: 20px;
     font-weight: bold;
 }
-
-
-
 
 
 /* swiper slide */
@@ -195,7 +194,6 @@ ul { list-style: none; }
 
 #footer_right {
     width: 240px; height: 218px;
-    /* background: cornflowerblue; */
     text-align: center;
 }
 
@@ -227,7 +225,71 @@ ul { list-style: none; }
     font-size: 10px;
 }
 
-@media screen and (max-width: 767px) {}
-@media screen and (min-width: 768px) and (max-width: 1023px){}
-@media screen and (min-width: 1024px) {}
+
+
+
+
+/* 미디어쿼리 */
+@media screen and (max-width: 767px) {
+    #main_icon {
+        padding-left: 20px;
+    }
+    
+    #gnb_menu{
+        display: none;
+    }
+    
+    #icon_box {
+        padding-right: 20px;
+        justify-content: flex-end;
+        /* display: unset; */
+    }
+
+    #icon_box > a:first-child,
+    #icon_box > a:nth-child(2) {
+        display: none;
+    }
+    #icon_box >a:last-child {
+        display: inline;
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #gnb_box {
+        height: unset;
+        flex-direction: column;
+    }
+    #main_icon{
+        padding: 5px 0;
+        display: flex;
+    }
+    #gnb_menu{
+        padding: 10px 0 18px;
+        display: flex;
+    }
+    #icon_box {
+        display: none;
+    }
+    #active_path {
+        position: unset;
+    }
+}
+
+/* 서브 모니터 */
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+        #main_icon {
+            padding-left: 4%;
+        }
+        #gnb_menu {
+            padding: 0 4%;
+        }
+        #icon_box {
+            padding-right: 4%;
+        }
+    }
+/* 메인 모니터 */
+@media screen and (min-width: 1920px) {
+}
 
