@@ -153,7 +153,7 @@ ul { list-style: none; }
     background: #EDE9E4;
 }
 #footer_box {
-    width: 944px; height: 218px;
+    width: 944px; 
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -231,6 +231,7 @@ ul { list-style: none; }
 
 /* 미디어쿼리 */
 @media screen and (max-width: 767px) {
+/* 헤더 gnb */
     #main_icon {
         padding-left: 20px;
     }
@@ -253,27 +254,62 @@ ul { list-style: none; }
         display: inline;
         padding-left: 10px;
     }
+/* 푸터 */
+    #footer_box {
+        width: unset; height: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #footer_left,
+    #footer_right {
+        width: unset; height: unset;
+        padding: 10px 0;
+    }
+    
+    #footer_logo {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 0 0 10px 0;
+    }
+    #footer_logo p {
+        padding-top: 8px;
+    }
 
+    #footer_num {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     #gnb_box {
+        padding-top: 12px;
         height: unset;
         flex-direction: column;
     }
     #main_icon{
-        padding: 5px 0;
+        padding: 0;
         display: flex;
     }
     #gnb_menu{
-        padding: 10px 0 18px;
+        padding: 16px 0 12px;
         display: flex;
+        font-size: 18px;
     }
+
     #icon_box {
         display: none;
     }
     #active_path {
         position: unset;
+    }
+
+
+    /* 푸터 */
+    #footer_box {
+        width: unset;
+        padding: 0 30px;
     }
 }
 
