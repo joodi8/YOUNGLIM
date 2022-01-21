@@ -109,10 +109,8 @@ ul { list-style: none; }
 
 }
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
     background: #fff;
-
+    
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -128,6 +126,33 @@ ul { list-style: none; }
     align-items: center;
 }
 
+.slide_text {
+    width: 62vw;
+    flex-direction: column;
+    text-align: right;
+    color: #fff;
+}
+.slide_text h1 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.slide_text p {
+    font-size: 20px;
+}
+.slide_text > a {
+    padding: 20px 2px 2px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: #fff 1px solid;
+}
+.swiper-slide.slide1 > .slide_text {
+    color: #3A302A;
+}
+.swiper-slide.slide1 > .slide_text > a {
+    color: #3A302A;
+    border-bottom: #3A302A 1px solid;
+}
 .swiper-slide.slide1 {
     background: url(../img/test/main_slide_00_1.jpeg);
     background-size: cover;
@@ -255,6 +280,32 @@ ul { list-style: none; }
         display: inline;
         padding-left: 10px;
     }
+
+/* 슬라이드 */
+    .slide_text {
+        width: 100%;
+        /* padding-bottom: 50px; */
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+    }
+    .slide_text h1 {
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    .slide_text p {
+        padding: 0 36px;
+        font-size: 16px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+
+
 /* 푸터 */
     #footer_box {
         width: unset; height: unset;
@@ -307,6 +358,16 @@ ul { list-style: none; }
         display: inline;
         padding-left: 10px;
     }
+
+/* 슬라이더 */
+    .slide_text {
+        width: 100%;
+        /* padding-bottom: 50px; */
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+    }
+
 
 
 /* 헤더 gnb 두번째*/
