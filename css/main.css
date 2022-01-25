@@ -71,7 +71,7 @@
 /* main_content box2 */
 #content_box2 {
     width: 100%;
-    height: 1160px;
+    /* height: 1160px; */
     background: #EDE9E4;
     display: flex;
     justify-content: center;
@@ -82,29 +82,29 @@
     display: flex;
     width: 60%;
     height: 864px;
+    padding: 140px 20px;
     justify-content: space-between;
 }
-
 
 /* form_menuBox */
 #form_box1 {
     width: 40%;
-    position: relative;
-    overflow: hidden;
-}
-#form_box1 img {
-    position: absolute;
+    background: url('../img/contentBox2_img/main2-img-nature01.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 #form_box2 {
     width: 50%;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #form_menuBox {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 110px;
 }
 
 .form_anchor a {
@@ -123,32 +123,38 @@
     padding-left: 30px;
 }
 
-#form_imgBox2 {
-    width: 100%;
-    height: 500px;
+/* form_articleBox */
+#form_articleBox {
+    display: flex;
     position: relative;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
 }
 
-#form_imgBox2 img {
-    /* position: absolute; */
-}
 
-
-/* >form_text */
+/* form_text*/
 #form_text p:first-child {
     font-size: 40px;
     font-weight: 100;
 }
 
 #form_text {
-    padding: 110px 0 20px;
 }
 
 #form_text p {
-    position: relative;
     font-size: 20px;
     color: #706B60;
+}
+
+/* form_imgBox2 */
+#form_imgBox2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    background: url('../img/contentBox2_img/main2-img-nature04.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -300,6 +306,7 @@
 
 
 @media screen and (max-width: 767px) {
+    /* content_Box1 */
     .category_item {
         font-size: 14px;
         padding: 0 10px;
@@ -316,8 +323,11 @@
     .product_img.box1 {
         display: none;
     }
+
+    /* content_Box2 */
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* content_Box1 */
     #product_imgWrap {
         width: 90%;
         height: 434px;
@@ -325,13 +335,23 @@
     .product_img {
         margin: 0 10px;
     }
+
+    /* content_Box2 */
+
 }
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
+    /* content_Box1 */
     #product_imgWrap {
         width: 80%;
         height: 558px;
     }
     .product_img {
+    }
+
+    /* content_Box2 */
+    #form_container {
+        width: 80%;
+        height: 600px;
     }
 }
 @media screen and (min-width: 1920px) {}
