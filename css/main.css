@@ -82,7 +82,7 @@
     display: flex;
     width: 60%;
     height: 864px;
-    padding: 140px 20px;
+    padding: 140px 0;
     justify-content: space-between;
 }
 
@@ -111,6 +111,10 @@
     color: #706B60;
 }
 
+.form_anchor a:hover {
+    color: #b3aca3;
+}
+
 .form_anchor:first-child {
     padding-right: 30px;
 }
@@ -129,7 +133,7 @@
     position: relative;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 60%;
+    height: 70%;
 }
 
 
@@ -149,9 +153,8 @@
 
 /* form_imgBox2 */
 #form_imgBox2 {
-    width: 100%;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     background: url('../img/contentBox2_img/main2-img-nature04.jpg');
     background-size: cover;
     background-position: center;
@@ -337,22 +340,126 @@
     }
 
     /* content_Box2 */
+    #form_container {
+        width: 90%;
+        height: 606px;
+    }
 
+    /* form_container */
+    #form_box1 {
+        width: 42%;
+    }
+    /* form_menu */
+    .form_anchor {
+        font-size: 16px;
+    }
+
+    /* form_articleBox*/
+    .form_anchor:first-child {
+        padding-right: 15px;
+    }
+    
+    .form_anchor:nth-child(2),
+    .form_anchor:nth-child(3) {
+        padding: 0 15px;
+    }
+    .form_anchor:last-child {
+        padding-left: 15px;
+    }
+
+    #form_box2{
+        width: 54%;
+    }
+    #form_text p:first-child {
+        font-size: 32px;
+    }
+
+    #form_text p {
+        font-size: 16px;
+    }
+    
 }
-@media screen and (min-width: 1024px) and (max-width: 1919px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     /* content_Box1 */
     #product_imgWrap {
         width: 80%;
         height: 558px;
     }
-    .product_img {
-    }
 
     /* content_Box2 */
     #form_container {
         width: 80%;
-        height: 600px;
+        height: 692px;
+    }
+    #form_box1 {
+        width: 42%;
+    }
+
+    /* form_menu */
+    .form_anchor {
+        font-size: 16px;
+    }
+
+    .form_anchor:first-child {
+        padding-right: 15px;
+    }
+    
+    .form_anchor:nth-child(2),
+    .form_anchor:nth-child(3) {
+        padding: 0 15px;
+    }
+    .form_anchor:last-child {
+        padding-left: 15px;
+    }
+
+    /* form_text*/
+    #form_text p:first-child {
+        font-size: 32px;
+    }
+
+    #form_text p {
+        font-size: 16px;
     }
 }
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    /* content_Box2 */
+    #form_container {
+        width: 80%;
+        height: 692px;
+    }
+
+    #form_box1 {
+        width: 42%;
+    }
+    
+    
+    #form_box2 {
+        width: 52%;
+    }
+
+    /* form_menu */
+    .form_anchor {
+        font-size: 18px;
+    }
+
+    .form_anchor:first-child {
+        padding-right: 20px;
+    }
+    
+    .form_anchor:nth-child(2),
+    .form_anchor:nth-child(3) {
+        padding: 0 20px;
+    }
+    .form_anchor:last-child {
+        padding-left: 20px;
+    }
+        /* form_text*/
+    
+        #form_text p {
+            font-size: 18px;
+        }
+
+}
+
 @media screen and (min-width: 1920px) {}
 
