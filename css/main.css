@@ -44,7 +44,7 @@
 
 
 }
-.product_img{
+.product_img {
     position: absolute;
     position: relative;
     display: flex;
@@ -52,13 +52,20 @@
     overflow: hidden;
     margin: 0 20px;
 }
-.product_img a {
+.product_img.box1 {
+        background: url(/img/product_img/kitchen/product_img_kitchen01.jpeg);
+        background-size: cover;
+        background-position: center;
 }
-
-.product_img img {
-    position: absolute;
-    width: auto;
-    height: 100%;
+.product_img.box2 {
+        background: url(/img/product_img/kitchen/product_img_kitchen02.jpeg);
+        background-size: cover;
+        background-position: center;
+}
+.product_img.box3 {
+        background: url(/img/product_img/kitchen/product_img_kitchen03.jpeg);
+        background-size: cover;
+        background-position: center;
 }
 
 /* main_content box2 */
@@ -268,15 +275,43 @@
     /* margin: ; */
 }
 
+
+
+
 @media screen and (max-width: 767px) {
     .category_item {
         font-size: 14px;
         padding: 0 10px;
     }
+    #product_imgWrap {
+        width: 90%;
+        height: 372px;
+    }
+    .product_img {
+        width: 50%;
+        margin: 0 10px;
+    }
+    
+    .product_img.box1 {
+        display: none;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #product_imgWrap {
+        width: 90%;
+        height: 434px;
+    }
+    .product_img {
+        margin: 0 10px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1919px) {
+    #product_imgWrap {
+        width: 80%;
+        height: 558px;
+    }
+    .product_img {
+    }
 }
 @media screen and (min-width: 1920px) {}
 
