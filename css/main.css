@@ -36,7 +36,7 @@
 
 #product_imgWrap {
     position: relative;
-    width: 60%;
+    width: 70%;
     height: 620px;
     display: flex;
     margin: 0 auto;
@@ -53,17 +53,17 @@
     margin: 0 20px;
 }
 .product_img.box1 {
-        background: url(/img/product_img/kitchen/product_img_kitchen01.jpeg);
+        background: url(/img/contentBox1_img/kitchen/product_img_kitchen01.jpeg);
         background-size: cover;
         background-position: center;
 }
 .product_img.box2 {
-        background: url(/img/product_img/kitchen/product_img_kitchen02.jpeg);
+        background: url(/img/contentBox1_img/kitchen/product_img_kitchen02.jpeg);
         background-size: cover;
         background-position: center;
 }
 .product_img.box3 {
-        background: url(/img/product_img/kitchen/product_img_kitchen03.jpeg);
+        background: url(/img/contentBox1_img/kitchen/product_img_kitchen03.jpeg);
         background-size: cover;
         background-position: center;
 }
@@ -80,7 +80,7 @@
 
 #form_container {
     display: flex;
-    width: 1584px;
+    width: 60%;
     height: 864px;
     justify-content: space-between;
 }
