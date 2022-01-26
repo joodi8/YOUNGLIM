@@ -244,20 +244,16 @@
     height: 100%;
 }
 
-
-
-
-
-
-
+/* main_content box4 */
 
 #content_box4 {
     /* background: rgb(184, 178, 178); */
     background: #EFEFED;
+    width: 100%; 
 }
 
 #counseling {
-    width: 1584px; height: 694px;
+    width: 60%;
     margin: 0 auto;
     padding: 102px 0;
 }
@@ -275,51 +271,78 @@
     font-weight: 200;
 }
 #counseling_text a {
+    display: flex;
+    align-items: center;
     font-size: 16px;
-    display: inline-block;
     padding: 20px 0 94px;
     color: black;
 }
+#counseling_anchor {
+
+}
+#counseling_anchor > p {
+    font-weight: 400;
+}
+#counseling_anchor > img {
+    width: 24px; height: 26px;
+    padding-bottom: 2px;
+}
 
 #counseling_box {
-    width: 1584px; height: 464px;
+    /* position: relative; */
+    width: 100%; 
+    height: 464px;
     display: flex;
     justify-content: space-between;
 }
 
-#counseling_imgBox1,
-#counseling_imgBox2, 
-#counseling_imgBox3 {
-    width: 464px; height: 464px;
-    position: relative;
+.counseling_img.Box1,
+.counseling_img.Box2,
+.counseling_img.Box3 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#counseling_imgBox1 img,
-#counseling_imgBox2 img,
-#counseling_imgBox3 img {
     border-radius: 80px 30px 0;
+    width: 30%;
+    letter-spacing: -1px;
+
 }
 
-#counseling_imgBox1 h1 {
-    position: absolute;
-    padding: 200px 5px 0;
-    border-bottom: black 1px solid;
+
+.counseling_img.Box1 {
+    background: url('../img/contentBox4_img/interior-check-img-01.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.counseling_img.Box2 {
+    background: url('../img/contentBox4_img/interior-check-img-02.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.counseling_img.Box3 {
+    background: url('../img/contentBox4_img/interior-check-img-03.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#counseling_box a:first-child {
+    padding: 240px 5px 0;
     color: black;
+    font-size: 32px;
+    line-height: 100%;
 }
 
-#counseling_imgBox2 h1,
-#counseling_imgBox3 h1 {
-    position: absolute;
-    padding: 200px 5px 0;
-    border-bottom: white 1px solid;
-    color: white;
-    /* top: 50%; */
-    /* margin: ; */
+#counseling_box a:nth-child(2),
+#counseling_box a:nth-child(3) {
+    padding-top: 240px;
+    color: #E2E2E3;
+    font-size: 32px;
+    line-height: 100%;
 }
 
+#counseling_box img {
+    width: 26px;
+    height: 36px;
+}
 
 
 
