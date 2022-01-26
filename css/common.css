@@ -103,12 +103,12 @@ ul { list-style: none; }
 
 /* swiper slide */
 
-.swiper-container {
+.swiper-container.swiper1 {
     width: 100%;
     height: 1220px;
 
 }
-.swiper-slide {
+.swiper-slide.swiper1{
     background: #fff;
     
     /* Center slide text vertically */
@@ -146,26 +146,26 @@ ul { list-style: none; }
     font-size: 16px;
     border-bottom: #fff 1px solid;
 }
-.swiper-slide.slide1 > .slide_text {
+.swiper-wrapper.swiper1 > .swiper-slide:first-child > .slide_text {
     color: #3A302A;
 }
-.swiper-slide.slide1 > .slide_text > a {
+.swiper-wrapper.swiper1 > .swiper-slide:first-child > .slide_text > a {
     color: #3A302A;
     border-bottom: #3A302A 1px solid;
 }
-.swiper-slide.slide1 {
+.swiper-wrapper.swiper1 > .swiper-slide:first-child {
     background: url('../img/header_slide/main_slide_00_1.jpeg');
     background-size: cover;
     background-position: center;
 }
 
-.swiper-slide.slide2 {
+.swiper-wrapper.swiper1 > .swiper-slide:nth-child(2) {
     background: url('../img/header_slide/main_slide_01_1.png');
     background-size: cover;
     background-position: center;
 }
 
-.swiper-slide.slide3 {
+.swiper-wrapper.swiper1 > .swiper-slide:nth-child(3) {
     background: url('../img/header_slide/main_slide_02_1.jpg');
     background-size: cover;
     background-position: center;

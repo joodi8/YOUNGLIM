@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="./css/test.css"> -->
 </head>
 <body>
@@ -57,9 +56,9 @@
             </div>
         </div>
         <!-- 메인 슬라이더 -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide1">
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper swiper1">
+                <div class="swiper-slide swiper1">
                     <div class="slide_text">
                         <h1>Wardrobe Reina Collection</h1>
                         <p>내추럴한 소재로 만든 로맨틱한 레이나 컬렉션.</p>
@@ -67,7 +66,7 @@
                         <a href="#">more</a>
                     </div>
                 </div>
-                <div class="swiper-slide slide2">
+                <div class="swiper-slide swiper1">
                     <div class="slide_text">
                         <h1>인테리어 스타일 제안</h1>
                         <p>디자이너가 제안하는 스타일컬렉션부터 다양한 사람들의</p>
@@ -75,7 +74,7 @@
                         <a href="#">more</a>
                     </div>
                 </div>
-                <div class="swiper-slide slide3">
+                <div class="swiper-slide swiper1">
                     <div class="slide_text">
                         <h1>영림프라임샤시, 창호</h1>
                         <p>뛰어난 단열과 기밀성으로 더 포근하고 아늑한 창</p>
@@ -114,6 +113,17 @@
 
         <div id="content_box2">
             <div id="form_container">
+                    <!-- Swiper 2 -->
+                <div class="swiper-container swiper2">
+                    <div class="swiper-wrapper swiper2">
+                        <div class="swiper-slide swiper2"></div>
+                        <div class="swiper-slide swiper2"></div>
+                        <div class="swiper-slide swiper2"></div>
+                        <div class="swiper-slide swiper2"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper2"></div>
+                </div>
                 <div id="form_box1"></div>
                 <div id="form_box2">
                     <ul id="form_menuBox">
@@ -123,7 +133,7 @@
                         <li class="form_anchor"><a href="#">Unique</a></li>
                     </ul>
                     <div id="form_articleBox">
-                        <div id="form_text">
+                        <div class="form_text natural">
                             <p>Natural</p>
                             <p>진정한 아름다움은 자연스러움에서 시작됩니다.</p>
                             <p>자연에서 얻은 소재와 색감은 공간에 담담하면서도 활발한 에너지를 더해주며</p>
@@ -211,9 +221,9 @@
                     <a href="#">대리점 개설문의</a>
                 </div>
                 <div id="footer_sns">
-                    <a href="#"><img src="./img/footer_icon/blog_R.png" width="60" height="60"></a>
-                    <a href="#"><img src="./img/footer_icon/instagram_R.png" width="60" height="60"></a>
-                    <a href="#"><img src="./img/footer_icon/youtube_R.png" width="60" height="60"></a>
+                    <a href="#"><img src="./img/footer_icon/blog_R.png" width="60" height="60" alt="블로그"></a>
+                    <a href="#"><img src="./img/footer_icon/instagram_R.png" width="60" height="60" alt="인스타그램"></a>
+                    <a href="#"><img src="./img/footer_icon/youtube_R.png" width="60" height="60" alt="유튜브"></a>
                 </div>
                 <p>Copyright(C) YOUNGLIM Co.,ltd. All rights reserved.</p>
             </div>
@@ -222,20 +232,32 @@
 </body>
 <script src="./js/swiper.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container.swiper1', {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
+            delay: 4000,
+            disableOnInteraction: false,
         },
         pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+            el: '.swiper-pagination',
+            clickable: true,
         },
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    var swiper = new Swiper('.swiper-container.swiper2', {
+        direction: 'vertical',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
         },
     });
 </script>
