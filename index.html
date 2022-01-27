@@ -29,26 +29,26 @@
                 <a class="side_icon" href="#"><img src="./img/header_icon/icon-gnb-menu.png" alt="메뉴" width="30" height="30"></a>
             </div>
             <div id="active_path">
-                <div class="active_bar"></div>
+                <div id="active_bar"></div>
             </div>
         </div>
         <div id="lnb_box">
             <div id="lnb_innerBox">
-                <ul id="lnb menu1">
+                <ul class="lnb menu1">
                     <li class="lnb_anchor"><a href="#">Made in Younglim</a></li>
                     <li class="lnb_anchor"><a href="#">Life with Younglim</a></li>
                     <li class="lnb_anchor"><a href="#">Identity of Younglim</a></li>
                 </ul>
-                <ul id="lnb menu2">
-                    <li class="lnb_anchor"><a href="#">키친/붙박이장</a></li>
+                <ul class="lnb menu2">
+                    <li class="lnb_anchor"><a href="#">키친</a></li>
                     <li class="lnb_anchor"><a href="#">바스/타일</a></li>
                     <li class="lnb_anchor"><a href="#">도어</a></li>
-                    <li class="lnb_anchor"><a href="#">중문</a></li>
-                    <li class="lnb_anchor"><a href="#">창호</a></li>
+                    <li class="lnb_anchor"><a href="#">중문/창호</a></li>
+                    <li class="lnb_anchor"><a href="#">붙박이장</a></li>
                     <li class="lnb_anchor"><a href="#">몰딩/월/마루</a></li>
                     <li class="lnb_anchor"><a href="#">인테리어 필름</a></li>
                 </ul>
-                <ul id="lnb menu3">
+                <ul class="lnb menu3">
                     <li class="lnb_anchor"><a href="#">인테리어 시작하기</a></li>
                     <li class="lnb_anchor"><a href="#">인테리어 스타일 제안</a></li>
                     <li class="lnb_anchor"><a href="#">리모델링 사례</a></li>
@@ -230,7 +230,9 @@
         </div>
     </footer>
 </body>
+<script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/swiper.js"></script>
+<script src="./js/common.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container.swiper1', {
         spaceBetween: 30,

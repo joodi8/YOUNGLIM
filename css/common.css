@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+
 * {
     margin: 0; padding: 0;
     font-family: 'ROBOTO', Arial, 'san-serif';
@@ -68,6 +71,15 @@ ul { list-style: none; }
     z-index: 2;
 }
 
+#active_bar {
+    width: 81px;
+    height: 6px;
+    margin: 0;
+    background: #C93D22;
+    border-radius: 4px 4px 0 0;
+    display: none;
+}
+
 /* lnb(하위메뉴) */
 #lnb_box {
     width: 100%;
@@ -96,9 +108,26 @@ ul { list-style: none; }
 }
 
 .lnb_anchor a:hover {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.appear {
+    animation: fade-in 0.5s;
+}
+
+.disappear {
+    animation: fade-out 0.5s;
+}
+
 
 
 /* swiper slide */
