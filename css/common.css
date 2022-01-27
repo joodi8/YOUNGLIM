@@ -95,17 +95,9 @@ ul { list-style: none; }
 #lnb_innerBox {
     position: relative;
     display: flex;
-    width: 706px;
-    /* height: 274px; */
     justify-content: space-between;
-    /* padding: 12px 30.5% 0 30.5%; */
-    /* margin: 0 144px; */
-}
-
-#rightBox,
-#leftBox {
-    width: 144px;
-    padding: 0 10%;
+    width: 706px;
+    margin: 0 auto;
 }
 
 

@@ -35,7 +35,7 @@ $ (function(){
                 $("#lnb_box").removeClass("appear")
                 $("#lnb_box").addClass("disappear")
                 $("#lnb_box").hide();
-                $("#active_bar")
+                $("#active_bar").hide();
             } else {
                 return;
             }
