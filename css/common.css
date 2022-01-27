@@ -330,9 +330,12 @@ ul { list-style: none; }
     #icon_box > a:nth-child(2) {
         display: none;
     }
-    #icon_box >a:last-child {
+    #icon_box > a:last-child {
         display: inline;
         padding-left: 10px;
+    }
+    #active_bar {
+        display: none;
     }
 
 /* 슬라이드 */
@@ -413,6 +416,10 @@ ul { list-style: none; }
         padding-left: 10px;
     }
 
+    #active_bar {
+        display: none;
+    }
+
 /* 슬라이더 */
     .slide_text {
         width: 100%;
@@ -421,31 +428,6 @@ ul { list-style: none; }
         text-align: center;
         color: #fff;
     }
-
-
-
-/* 헤더 gnb 두번째*/
-    /* #gnb_box {
-        padding-top: 12px;
-        height: unset;
-        flex-direction: column;
-    }
-    #main_icon{
-        padding: 0;
-        display: flex;
-    }
-    #gnb_menu{
-        padding: 16px 0 12px;
-        display: flex;
-        font-size: 18px;
-    }
-
-    #icon_box {
-        display: none;
-    }
-    #active_path {
-        position: unset;
-    } */
 
 
 /* 푸터 */
