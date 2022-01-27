@@ -93,9 +93,35 @@ ul { list-style: none; }
     display: none;
 }
 #lnb_innerBox {
+    position: relative;
     display: flex;
-    width: 624px;
-    padding: 12px 0;
+    width: 706px;
+    /* height: 274px; */
+    justify-content: space-between;
+    /* padding: 12px 30.5% 0 30.5%; */
+    /* margin: 0 144px; */
+}
+
+#rightBox,
+#leftBox {
+    width: 144px;
+    padding: 0 10%;
+}
+
+
+.lnb {
+    position: absolute;
+    text-align: center;
+}
+.lnb.menu1 {
+    
+}
+.lnb.menu2 {
+    left: 23%;
+    text-align: unset;
+}
+.lnb.menu3 {
+    left: 36%;
 }
 
 .lnb_anchor {
@@ -108,8 +134,7 @@ ul { list-style: none; }
 }
 
 .lnb_anchor a:hover {
-    font-size: 18px;
-    font-weight: bold;
+    color: #746c64;
 }
 
 .show {
