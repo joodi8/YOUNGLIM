@@ -333,7 +333,6 @@ ul { list-style: none; }
 /* 슬라이드 */
     .slide_text {
         width: 100%;
-        /* padding-bottom: 50px; */
         flex-direction: column;
         text-align: center;
         color: #fff;
@@ -415,7 +414,6 @@ ul { list-style: none; }
 /* 슬라이더 */
     .slide_text {
         width: 100%;
-        /* padding-bottom: 50px; */
         flex-direction: column;
         text-align: center;
         color: #fff;
@@ -427,51 +425,6 @@ ul { list-style: none; }
         width: unset;
         padding: 0 30px;
     }
-
-
-
-    /* 테스트
-    #gnb_menu {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .gnb_anchor {
-        display: inline-block;
-        text-align: center;
-    }
-    .gnb_anchor > a {
-        color: #381E10;
-        font-size: 24px;
-        font-weight: normal;
-    }
-
-
-    #lnb_box {
-        width: 100%;
-        background: rgba(239, 239, 237, 0.7);
-        display: flex;
-        position: absolute;
-        top: 80px;
-        z-index: 2;
-        justify-content: center;
-        height: 274px;
-        display: none;
-    }
-    #lnb_innerBox {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    
-    .lnb {
-        position: absolute;
-        text-align: center;
-    } */
-
 }
 
 /* 서브 모니터 */
