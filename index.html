@@ -161,8 +161,9 @@
                             </button>
                         </div>
                     </div>
+                    
                     <div id="youtube_video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/L3GplJfWC-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/L3GplJfWC-s" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -229,38 +230,38 @@
             </div>
         </div>
     </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container.swiper1', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    
+        var swiper = new Swiper('.swiper-container.swiper2', {
+            direction: 'vertical',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
-<script src="./js/jquery-3.6.0.min.js"></script>
-<script src="./js/swiper.js"></script>
-<script src="./js/common.js"></script>
-<script>
-    var swiper = new Swiper('.swiper-container.swiper1', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    var swiper = new Swiper('.swiper-container.swiper2', {
-        direction: 'vertical',
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-    });
-</script>
 </html>
